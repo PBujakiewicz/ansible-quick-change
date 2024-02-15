@@ -34,12 +34,22 @@
 
 
 
-  #   - name: Shell
-  #     shell: |
-  #       echo "text" >> /tmp/*txt
-  #       echo "text2" >> /tmp/*txt
-  #     args:
-  #       executable: /bin/bash
+    # - name: Shell
+    #   shell: |
+    #     echo "text" >> /tmp/*txt
+    #     echo "text2" >> /tmp/*txt
+    #   args:
+    #     executable: /bin/bash
+
+
+
+    # - name: Shell delegate to localhost
+    #   shell: |
+    #     echo "text" >> /tmp/*txt
+    #     echo "text2" >> /tmp/*txt
+    #   args:
+    #     executable: /bin/bash
+    #   delegate_to: localhost
 
 
 
