@@ -1,0 +1,65 @@
+---
+
+- name: quick_change
+  gather_facts: false
+  hosts: localhost
+  # hosts: vm
+  # hosts: masters
+  # hosts: workers
+  remote_user: devops
+  tasks:
+
+    - name: Display the msg
+      debug:
+        msg: "Dupa"
+
+
+
+  #   - name: Loop
+  #     debug:
+  #       msg: "User {{ item.name }} is in group {{ item.group }}"
+  #     loop:
+  #       - { name: 'testuser1', group: 'wheel' }
+  #       - { name: 'testuser2', group: 'root' }
+
+
+
+  #   - name: Print the command output part 1
+  #     shell: uptime
+  #     register: command_output
+
+  #   - name: Print the command output part 2
+  #     debug:
+  #       var: command_output.stdout_lines
+
+
+
+  #   - name: Shell
+  #     shell: |
+  #       echo "text" >> /tmp/*txt
+  #       echo "text2" >> /tmp/*txt
+  #     args:
+  #       executable: /bin/bash
+
+
+
+  #   - name: SSH - Set authorized key from file
+  #     authorized_key:
+  #       user: devops
+  #       state: present
+  #       key: "{{ lookup('file', '/home/pbujakiewicz/.ssh/id_rsa.pub') }}"
+
+
+
+  #   - name: Write the apache config file
+  #     template:
+  #       src: /srv/httpd.j2
+  #       dest: /etc/httpd.conf
+  #     notify:
+  #       - Restart apache
+
+  # handlers:
+  #   - name: Restart apache
+  #     service:
+  #       name: httpd
+  #       state: restarted
