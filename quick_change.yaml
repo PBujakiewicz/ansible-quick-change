@@ -9,9 +9,9 @@
   remote_user: devops
   tasks:
 
-    - name: Display the msg
-      debug:
-        msg: "Dupa"
+    # - name: Display the msg
+    #   debug:
+    #     msg: "Dupa"
 
 
 
@@ -24,13 +24,13 @@
 
 
 
-  #   - name: Print the command output part 1
-  #     shell: uptime
-  #     register: command_output
-
-  #   - name: Print the command output part 2
-  #     debug:
-  #       var: command_output.stdout_lines
+    # - shell: uptime
+    #   args:
+    #     executable: /bin/bash
+    #   become: true
+    #   register: command_output
+    # - debug:
+    #     var: command_output.stdout_lines
 
 
 
